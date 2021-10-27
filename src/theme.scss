@@ -68,41 +68,40 @@ $rk-secondary: (
 );
 
 $rk-warning: (
-    50 : #f9e0e0,
-    100 : #f0b3b3,
-    200 : #e68080,
-    300 : #db4d4d,
-    400 : #d42626,
-    500 : #cc0000,
-    600 : #c70000,
-    700 : #c00000,
-    800 : #b90000,
-    900 : #ad0000,
-    A100 : #ffd7d7,
-    A200 : #ffa4a4,
-    A400 : #ff7171,
-    A700 : #ff5858,
+    50: #f9e0e0,
+    100: #f0b3b3,
+    200: #e68080,
+    300: #db4d4d,
+    400: #d42626,
+    500: #cc0000,
+    600: #c70000,
+    700: #c00000,
+    800: #b90000,
+    900: #ad0000,
+    A100: #ffd7d7,
+    A200: #ffa4a4,
+    A400: #ff7171,
+    A700: #ff5858,
     contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #ffffff,
-        400 : #ffffff,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #ffffff,
+        400: #ffffff,
+        500: #ffffff,
+        600: #ffffff,
+        700: #ffffff,
+        800: #ffffff,
+        900: #ffffff,
+        A100: #000000,
+        A200: #000000,
+        A400: #000000,
+        A700: #000000,
+    ),
 );
 
-
-$rk-palette-primary: mat-palette($rk-primary, 50, 100);
-$rk-palette-accent: mat-palette($rk-secondary, 50, 100, A700);
+$rk-palette-primary: mat-palette($rk-primary);
+$rk-palette-accent: mat-palette($rk-secondary);
 $rk-palette-warn: mat-palette($rk-warning);
 
 // include the custom theme components into a theme object
@@ -110,3 +109,7 @@ $rk-theme: mat-light-theme($rk-palette-primary, $rk-palette-accent, $rk-palette-
 
 // include the custom theme object into the angular material theme
 @include angular-material-theme($rk-theme);
+
+.rk-theme {
+    @include mat-button-theme($rk-theme);
+}
