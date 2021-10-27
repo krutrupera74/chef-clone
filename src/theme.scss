@@ -1,0 +1,112 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+$rk-primary: (
+    50: #eff2f5,
+    100: #b3c1cd,
+    200: #8198ac,
+    300: #4f6e8b,
+    400: #294f72,
+    500: #033059,
+    600: #032b51,
+    700: #022448,
+    800: #021e3e,
+    900: #01132e,
+    A100: #6793ff,
+    A200: #346fff,
+    A400: #014bff,
+    A700: #0043e6,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #ffffff,
+        400: #ffffff,
+        500: #ffffff,
+        600: #ffffff,
+        700: #ffffff,
+        800: #ffffff,
+        900: #ffffff,
+        A100: #000000,
+        A200: #ffffff,
+        A400: #ffffff,
+        A700: #ffffff,
+    ),
+);
+
+$rk-secondary: (
+    50: #fff6f5,
+    100: #ffe9e6,
+    200: #ffdad5,
+    300: #fecbc4,
+    400: #febfb8,
+    500: #feb4ab,
+    600: #feada4,
+    700: #fea49a,
+    800: #fe9c91,
+    900: #fd8c80,
+    A100: #ffffff,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #000000,
+        500: #000000,
+        600: #000000,
+        700: #000000,
+        800: #000000,
+        900: #000000,
+        A100: #000000,
+        A200: #000000,
+        A400: #000000,
+        A700: #000000,
+    ),
+);
+
+$rk-warning: (
+    50 : #f9e0e0,
+    100 : #f0b3b3,
+    200 : #e68080,
+    300 : #db4d4d,
+    400 : #d42626,
+    500 : #cc0000,
+    600 : #c70000,
+    700 : #c00000,
+    800 : #b90000,
+    900 : #ad0000,
+    A100 : #ffd7d7,
+    A200 : #ffa4a4,
+    A400 : #ff7171,
+    A700 : #ff5858,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+$rk-palette-primary: mat-palette($rk-primary, 50, 100);
+$rk-palette-accent: mat-palette($rk-secondary, 50, 100, A700);
+$rk-palette-warn: mat-palette($rk-warning);
+
+// include the custom theme components into a theme object
+$rk-theme: mat-light-theme($rk-palette-primary, $rk-palette-accent, $rk-palette-warn);
+
+// include the custom theme object into the angular material theme
+@include angular-material-theme($rk-theme);
