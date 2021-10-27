@@ -14,16 +14,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // tslint:disable-next-line: typedef
-  showHide(value) {
-    if (value) {
-      this.showSpinner = true;
-    } else {
-      this.showSpinner = false;
-    }
-  }
-
-  showAlert(){
+  showAlert() {
+    debugger
+    console.log('helloooo');
+    
     alert('hello');
   }
 
