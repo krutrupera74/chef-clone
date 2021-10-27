@@ -1,0 +1,96 @@
+footer {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    background-color: #033059;
+}
+
+footer .footer-content-list li {
+    display: flex;
+    color: hsla(0, 0%, 100%, 0.8);
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.footer-container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-secondary {
+    color: #feb4ab !important;
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem;
+}
+
+.footer-content .hc-logo {
+    max-width: 200px;
+}
+
+.footer-content-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content-list li .content-icon {
+    display: inline-block;
+    min-width: 25px;
+    font-size: 18px;
+}
+
+.footer-content-list li a {
+    color: hsla(0, 0%, 100%, 0.8);
+    text-decoration: none;
+}
+
+.footer-content-list li .content-icon.icon-mail {
+    font-size: 15px;
+}
+
+.footer-content-social li {
+    display: inline-block !important;
+}
+
+.footer-content-social li a {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #033059;
+    margin-right: 12px;
+    transition: all 0.3s ease-in;
+}
+
+.c-light {
+    color: hsla(0,0%,100%,.8);
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .d-md-block {
+        display: inline-flex !important;
+    }
+    .d-inline-flex {
+        display: block !important;
+    }
+}

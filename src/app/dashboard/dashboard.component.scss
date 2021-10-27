@@ -1,0 +1,78 @@
+.banner {
+  min-height: calc(100vh - 83px);
+  display: flex;
+  align-items: center;
+  background: url("./../../assets/images/bg_banner1.jpg");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-primary {
+  color: #033059 !important;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+}
+
+.banner-subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.btn-secondary {
+  color: #212529;
+  background-color: #feb4ab;
+  border-color: #feb4ab;
+}
