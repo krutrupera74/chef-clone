@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './login/login.component';
+import { DailyUIComponent } from './daily-ui/daily-ui.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { LoginComponent } from './login/login.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    DailyUIComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

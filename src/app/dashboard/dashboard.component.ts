@@ -14,11 +14,4 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showAlert() {
-    debugger
-    console.log('helloooo');
-    
-    alert('hello');
-  }
-
 }
