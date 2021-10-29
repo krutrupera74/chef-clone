@@ -13,6 +13,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './login/login.component';
 import { DailyUIComponent } from './daily-ui/daily-ui.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProjectsComponent } from './projects/projects.component';
     ContactComponent,
     LoginComponent,
     DailyUIComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
