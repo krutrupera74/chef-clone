@@ -1,0 +1,101 @@
+body {
+    overflow-x: hidden;
+}
+
+.no-style {
+    text-decoration: none !important;
+}
+
+.link-text {
+    text-decoration: none !important;
+    color: white;
+}
+
+.content {
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.primary-text {
+    color: #033059;
+    font-size: 1.5rem !important;
+}
+
+.primary-link {
+    color: #033059;
+}
+
+.primary-link:hover {
+    color: #5c258d;
+}
+
+.mat-title {
+    border-radius: 10px;
+    margin: 0 5px 10px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5c258d;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.secondary-text {
+    color: gray;
+    margin: 10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 20px !important;
+    width: 60px;
+    text-align: center;
+    text-decoration: none !important;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+/* Google */
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
