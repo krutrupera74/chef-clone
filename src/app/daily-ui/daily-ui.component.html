@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content-wrapper content">
     <mat-toolbar color="accent" class="mat-title">
         <h1 class="primary-text">DailyUI Projects</h1>
     </mat-toolbar>
@@ -12,7 +12,22 @@
                         <strong>View</strong> button to navigate to the design.
                     </p>
                 </mat-card-content>
-                <mat-card-actions align="end">
+                <mat-card-actions align="end" class="card-actions">
+                    <button mat-raised-button color="primary" type="button" [routerLink]="['/login']">View</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-title>Credit Card Checkout</mat-card-title>
+                <mat-card-content>
+                    <p>
+                        This is the Credit card checkout design. This was prepared for DailyUI challange #2. Please
+                        click on the
+                        <strong>View</strong> button to navigate to the design.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions align="end" class="card-actions">
                     <button mat-raised-button color="primary" type="button" [routerLink]="['/login']">View</button>
                 </mat-card-actions>
             </mat-card>

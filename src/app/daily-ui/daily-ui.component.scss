@@ -9,3 +9,14 @@
 :host .mat-card-header-text {
     margin: 0;
 }
+
+.mat-card {
+    height: 250px;
+    overflow-y: auto;
+}
+
+.card-actions {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
