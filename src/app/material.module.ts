@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
     imports: [
@@ -20,6 +21,7 @@ import {MatMenuModule} from '@angular/material/menu';
         MatSidenavModule,
         MatListModule,
         MatMenuModule,
+        MatInputModule,
     ],
     exports: [
         MatCardModule,
@@ -31,6 +33,7 @@ import {MatMenuModule} from '@angular/material/menu';
         MatSidenavModule,
         MatListModule,
         MatMenuModule,
+        MatInputModule,
     ],
     declarations: [],
     providers: [],

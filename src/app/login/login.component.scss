@@ -1,0 +1,79 @@
+.login-content {
+    background: #5c258d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4389a2, #5c258d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #4389a2,
+        #5c258d
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 96%;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 15px 15px 15px 30px;
+}
+
+.login-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: "Lobster", cursive;
+    margin: 20px 0px -10px;
+    padding: 30px 0px;
+}
+
+.row-height {
+    height: 100%;
+}
+
+mat-card {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.input-row > mat-form-field {
+    margin: 10px;
+}
+
+.login-form {
+    margin: 40px 30px !important;
+    padding: 20px;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #254c5a 0%, #4389a2 51%, #5c258d 100%);
+    display: flex;
+    justify-content: center;
+}
+.btn-grad {
+    margin: 50px 10px 50px;
+    padding: 5px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 70px;
+}

@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { DailyUIComponent } from './daily-ui/daily-ui.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,15 @@ import { NotFoundComponent } from './shared/not-found/not-found.component';
     LoginComponent,
     DailyUIComponent,
     ProjectsComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
