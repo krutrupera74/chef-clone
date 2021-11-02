@@ -27,4 +27,10 @@ export class AppComponent implements AfterViewInit {
     });
     this.cdr.detectChanges();
   }
+
+  toggleSideNav() {
+    if (this.sidenav.mode === 'over') {
+      this.sidenav.close();
+    }
+  }
 }

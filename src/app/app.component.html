@@ -19,19 +19,19 @@
         <h2 class="name">Name</h2>
         <p class="designation">Designation</p>
         <mat-divider></mat-divider>
-        <button mat-button class="menu-button" [routerLink]="['/dashboard']">
+        <button mat-button class="menu-button" [routerLink]="['/dashboard']" (click)="toggleSideNav()">
             <mat-icon>home</mat-icon>
             <span>Home</span>
         </button>
-        <button mat-button class="menu-button" [routerLink]="['/projects']">
+        <button mat-button class="menu-button" [routerLink]="['/projects']" (click)="toggleSideNav()">
             <mat-icon>work</mat-icon>
             <span>Projects</span>
         </button>
-        <button mat-button class="menu-button" [routerLink]="['/about']">
+        <button mat-button class="menu-button" [routerLink]="['/about']" (click)="toggleSideNav()">
             <mat-icon>person</mat-icon>
             <span>About</span>
         </button>
-        <button mat-button class="menu-button" [routerLink]="['/contact']">
+        <button mat-button class="menu-button" [routerLink]="['/contact']" (click)="toggleSideNav()">
             <mat-icon>phone</mat-icon>
             <span>Contact</span>
         </button>
