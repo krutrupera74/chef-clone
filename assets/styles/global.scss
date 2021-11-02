@@ -16,6 +16,10 @@ body {
     margin-left: 15px;
 }
 
+.content-wrapper {
+    margin: 0px 15px !important;
+}
+
 .primary-text {
     color: #033059;
     font-size: 1.5rem !important;
@@ -100,24 +104,6 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 425px) {
-    body{
-        margin: 0% !important;
-        padding: 0% !important;
-    }
-    .content {
-        margin: 0px !important;
-        padding: 0% !important;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    body{
-        margin: 0% !important;
-        padding: 0% !important;
-    }
-    .content {
-        margin: 0px !important;
-        padding: 0% !important;
-    }
+.primary-button-icon {
+    color: #033059;
 }
