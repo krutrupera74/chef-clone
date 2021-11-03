@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,7 +14,8 @@ import { LoginComponent } from './login/login.component';
 import { DailyUIComponent } from './daily-ui/daily-ui.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreditCardCheckoutComponent } from './credit-card-checkout/credit-card-checkout.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     DailyUIComponent,
     ProjectsComponent,
     NotFoundComponent,
+    CreditCardCheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +36,13 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

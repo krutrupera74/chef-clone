@@ -28,6 +28,7 @@ export class AppComponent implements AfterViewInit {
     this.cdr.detectChanges();
   }
 
+  // tslint:disable-next-line: typedef
   toggleSideNav() {
     if (this.sidenav.mode === 'over') {
       this.sidenav.close();
